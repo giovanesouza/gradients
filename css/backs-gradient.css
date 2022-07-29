@@ -4,46 +4,208 @@
     box-sizing: border-box;
 }
 
+
+html {
+    font-size: 62.5%;
+}
+
+
 body {
 
-    font-size: 62.5%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #cccccc80;
+    font-family: monospace;
 
 }
 
 
-.container  {
+.container {
+
     display: flex;
     flex-direction: column;
 
-    margin: 10px;
-   
+    margin: 2.6rem;
+
 }
 
+/* DIV DO BACKGROUND */
 .back {
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 50vh;
+    color: #fff;
+    text-shadow: 2px 2px 10px #000;
+
+    height: 15vh;
+    box-shadow: 2px 2px 15px #000;
+
     border-radius: 1rem;
-    
+
+    transition: all .5s;
+    cursor: pointer;
+
 }
 
-.hexa-color {
 
+.back:hover {
+    height: 60vh;
+}
+
+
+/* ÁREA DO CÓDIGO HEXADECIMAL - COR */
+
+.hexa-color {
+    
     display: flex;
     justify-content: space-between;
 }
 
+
+/* TÍTULO DA COR */
+h2 {
+    font-size: 2.5rem;
+}
+
+
+/* TEXTO COM CÓDIGO DA COR */
 p {
 
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.6rem;
     margin: 1rem;
 }
 
-h2 {
-    font-size: 2rem;
+
+
+/* BACKGROUNDS - gradientes */
+
+.love {
+    background-image: linear-gradient(90deg, #FF0D47, #FFAD97);
 }
 
+
+.notebook {
+    background-image: linear-gradient(90deg, #DBE0F5, #D6A5A8);
+}
+
+
+.deepBlue {
+    background-image: linear-gradient(90deg, #DCC3FC, #91C6FC);
+}
+
+
+.cloudy {
+    background-image: linear-gradient(90deg, #FCFAFB, #ECEDEF);
+}
+
+
+.sunny {
+    background-image: linear-gradient(90deg, #FDDF59, #FFA751);
+}
+
+
+.faraway {
+    background-image: linear-gradient(90deg, #2FC1E4, #E6EAC6);
+}
+
+
+.olive {
+    background-image: linear-gradient(90deg, #F3F5F2, #ADBC7B);
+}
+
+
+.sunset {
+    background-image: linear-gradient(90deg, #DF6864, #FDB58C);
+}
+
+
+.mars {
+    background-image: linear-gradient(90deg, #E9970F, #FC5600);
+}
+
+
+.hodor {
+    background-image: linear-gradient(90deg, #88E3F5, #E3C4CA);
+}
+
+
+.kennedy {
+    background-image: linear-gradient(90deg, #10AD6A, #33B68A);
+}
+
+
+.caesar {
+    background-image: linear-gradient(90deg, #DF374E, #593784);
+}
+
+
+.soda {
+    background-image: linear-gradient(90deg, #FED507, #F9B630);
+}
+
+
+.login {
+    background-image: linear-gradient(90deg, #8BE0DB, #55CEC9);
+}
+
+
+.merkel {
+    background-image: linear-gradient(90deg, #4089EF, #10B2FA);
+}
+
+
+.paranoia {
+    background-image: linear-gradient(90deg, #E951F5, #0169F9);
+}
+
+
+.lime {
+    background-image: linear-gradient(90deg, #789D10, #FEE002);
+}
+
+
+.diamante {
+    background-image: linear-gradient(90deg, #0F3349, #34E99C);
+}
+
+
+.cheek {
+    background-image: linear-gradient(90deg, #FF896B, #FCF7D1);
+}
+
+
+.malibu {
+    background-image: linear-gradient(90deg, #2DBFE4, #EAEAC5);
+}
+
+
+.neon {
+    background-image: linear-gradient(90deg, #8E356B, #6E64E9);
+}
+
+
+.deep {
+    background-image: linear-gradient(90deg, #1B1554, #43C2AD);
+}
+
+
+.pimp {
+    background-image: linear-gradient(90deg, #100C2C, #302A66);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    html {
+        font-size: 50%;
+    }
+
+
+    .back:hover {
+        height: 40vh;
+    }
+
+
+}
